@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div className="navbar  shadow-sm max-w-full ">
             
-            <div className="navbar   max-w-10/12 mx-auto ">
+            <div className="navbar max-w-full   md:max-w-10/12 mx-auto ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <a className="btn btn-ghost bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent text-4xl my-3">DigiTools</a>
+    <a className="btn btn-ghost bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent text-2xl sm:text-4xl my-3">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

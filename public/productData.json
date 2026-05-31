@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Pro",
+    "description": "Ideal for individuals starting their professional journey.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10+ Templates", "Basic Analytics", "Email Support"],
+    "icon": "lucide-rocket"
+  },
+  {
+    "id": 2,
+    "name": "Business Growth",
+    "description": "Accelerate your brand identity and marketing efforts.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ Templates", "ATS Optimization", "Export to PDF", "Custom Domain"],
+    "icon": "lucide-briefcase"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Elite",
+    "description": "Unlimited tools and premium features for large teams.",
+    "price": 499.00,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["All Templates", "Priority Support", "Advanced API Access", "Team Collaboration"],
+    "icon": "lucide-crown"
+  },
+  {
+    "id": 4,
+    "name": "Freelancer Basic",
+    "description": "Everything a freelancer needs in one place.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["5 Templates", "Standard Export", "Basic Support"],
+    "icon": "lucide-user"
+  },
+  {
+    "id": 5,
+    "name": "Agency Suite",
+    "description": "A comprehensive solution for marketing agencies.",
+    "price": 89.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["500+ Templates", "SEO Tools", "White Labeling", "Dedicated Manager"],
+    "icon": "lucide-layout-grid"
+  },
+  {
+    "id": 6,
+    "name": "Lifetime Access",
+    "description": "Pay once and enjoy all future updates forever.",
+    "price": 799.00,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Lifetime Updates", "All Premium Tools", "No Monthly Fees", "Early Access"],
+    "icon": "lucide-infinity"
+  }
+]
