@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className="grid grid-cols-12 gap-4 sm:mt-20 sm:max-w-10/12 mx-auto   p-10">
+        <div className="grid grid-cols-12 gap-4 sm:mt-5 sm:max-w-10/12 mx-auto   p-10">
             <div className="grid col-span-12  md:col-span-6 gap-6">
 
                 <div className=" flex flex-col items-center justify-center gap-5  w-full  shadow-sm">
