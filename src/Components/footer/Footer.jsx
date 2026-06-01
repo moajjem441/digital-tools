@@ -11,31 +11,35 @@ const Footer = () => {
     </p>
   </aside>
   <nav>
-    <h6 className="footer-title">Product</h6>
+    <h6 className="font-bold text-lg">Product</h6>
     <a className="link link-hover">Features</a>
     <a className="link link-hover">Pricing</a>
     <a className="link link-hover">Templates</a>
     <a className="link link-hover">Integrations</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Company</h6>
+    <h6 className="font-bold text-lg">Company</h6>
     <a className="link link-hover">About </a>
     <a className="link link-hover">Blog</a>
     <a className="link link-hover">Careers</a>
     <a className="link link-hover">Press</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Resources</h6>
+    <h6 className="font-bold text-lg">Resources</h6>
     <a className="link link-hover">Documentation</a>
     <a className="link link-hover">Community</a>
     <a className="link link-hover">Contact</a>
   </nav>
 
   <nav>
-    <h6 className="footer-title">Social Links</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+    <h6 className="font-bold text-lg">Social Links</h6>
+    <div className="flex items-center gap-4">
+       
+    <a className="link link-hover"><img className="bg-white rounded-4xl" src="/assets/Instagram.png"></img></a>
+    <a className="link link-hover"><img className="bg-white rounded-4xl" src="/assets/facebook.png"></img></a>
+    <a className="link link-hover"><img className="bg-white rounded-4xl" src="/assets/twitter.png"></img></a>
+    </div>
+    
   </nav>
 </footer>
         </div>
