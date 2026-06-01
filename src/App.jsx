@@ -6,6 +6,7 @@ import Banner from './Components/banner/Banner'
 import CardSeperator from './Components/card-separator/CardSeperator'
 import Navbar from './Components/navbar/Navbar'
 import ThreeCards from './Components/threeCards/ThreeCards'
+import TransparentCard from './Components/transparent-card/TransparentCard'
 
 const productPromise= async()=>{
   const res = await fetch("/productData.json");
@@ -29,6 +30,7 @@ function App() {
      </Suspense>
 
      <ThreeCards></ThreeCards>
+     <TransparentCard></TransparentCard>
      
     </div>
   )
