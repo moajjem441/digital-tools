@@ -11,7 +11,7 @@ const Banner = () => {
                                 <p> New: AI-Powered Tools Available</p>
                             </div>
                       
-                        <h1 className=" text-3xl sm:text-5xl md:text-7xl font-bold my-3 text-center">Supercharge Your
+                        <h1 className=" text-3xl sm:text-4xl md:text-7xl font-bold my-3 text-center">Supercharge Your
                             Digital Workflow</h1>
                         <p className="text-center text-gray-600">
                             Access premium AI tools, design assets, templates, and productivity

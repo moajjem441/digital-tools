@@ -8,7 +8,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["10+ Templates", "Basic Analytics", "Email Support"],
-    "icon": "lucide-rocket"
+    "icon": "design-tool.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["100+ Templates", "ATS Optimization", "Export to PDF", "Custom Domain"],
-    "icon": "lucide-briefcase"
+    "icon": "operation.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["All Templates", "Priority Support", "Advanced API Access", "Team Collaboration"],
-    "icon": "lucide-crown"
+    "icon": "portfolio.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["5 Templates", "Standard Export", "Basic Support"],
-    "icon": "lucide-user"
+    "icon": "shopping-cart.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["500+ Templates", "SEO Tools", "White Labeling", "Dedicated Manager"],
-    "icon": "lucide-layout-grid"
+    "icon": "social-media.png"
   },
   {
     "id": 6,
@@ -63,6 +63,6 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Lifetime Updates", "All Premium Tools", "No Monthly Fees", "Early Access"],
-    "icon": "lucide-infinity"
+    "icon": "writing_2327400 1.png"
   }
 ]
