@@ -2,7 +2,8 @@ import { use, useState } from "react";
 import Card from "./Card";
 
 
-const AllCards = ({productData}) => {
+const AllCards = ({productData,cart,setCart}) => {
+
     const [color,setColor]=useState("product")
     console.log("product data",productData)
 
@@ -11,7 +12,7 @@ const AllCards = ({productData}) => {
 
 
         const active="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-4xl";
-        const inActive="bg-gray-500 text-white";
+        const inActive="bg-gray-600 text-white";
 
        
     return (
@@ -33,7 +34,7 @@ const AllCards = ({productData}) => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-content items-center gap-10  mx-auto">
                     {
-                        data.map((product)=><Card key={product.id} product={product}></Card>)
+                        data.map((product)=><Card key={product.id} product={product} cart={cart} setCart={setCart}></Card>)
                     }
                 </div>
 

@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-gray-950 text-white p-10">
+            <footer className="footer sm:footer-horizontal bg-gray-950 text-white p-10 py-40">
   <aside>
     <h1 className="text-4xl font-bold">DigiTools</h1>
     <p>

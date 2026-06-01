@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import AllCards from './Components/all-cards/AllCards'
 import Banner from './Components/banner/Banner'
@@ -18,17 +18,19 @@ const productPromise= async()=>{
 
 function App() {
 
+  const [cart,setCart]=useState(0);
+
       const productData = productPromise();
       console.log("product Data",productData);
 
   return (
     <div className="flex flex-col gap-8 md:gap-16">
-     <Navbar></Navbar>
+     <Navbar cart={cart}></Navbar>
      <Banner></Banner>
      <CardSeperator></CardSeperator>
 
      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-          <AllCards productData={productData}></AllCards>
+          <AllCards productData={productData} cart={cart} setCart={setCart}></AllCards>
      </Suspense>
 
      <ThreeCards></ThreeCards>

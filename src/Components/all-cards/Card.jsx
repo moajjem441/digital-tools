@@ -1,6 +1,25 @@
+import { useState } from "react";
 
 
-const Card = ({ product }) => {
+const Card = ({ product ,cart,setCart}) => {
+ const [buttonClick,setButtonClick]=useState(false)
+
+ const handleButtonClick=()=>{
+  if(!buttonClick){
+    alert(`${product.name} added to cart!`);
+    setCart(cart+1);
+    setButtonClick(true);
+
+  }else{
+    alert(`${product.name} removed form cart!`);
+   if(cart > 0){
+    setCart(cart-1);
+    setButtonClick(false);
+   }
+  }
+  
+ }
+
   console.log("product in card", product)
   return (
     <div>
@@ -26,7 +45,7 @@ const Card = ({ product }) => {
       
     </ul>
     <div className="mt-6">
-      <button className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] w-full p-3 rounded-4xl text-white ">Buy Now</button>
+      <button onClick={handleButtonClick} className={` w-full p-3 rounded-4xl text-white ${buttonClick ? "bg-green-600 text-white": "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] "} `}>{buttonClick ? "Added to Cart" : "Buy Now"}</button>
     </div>
   </div>
 </div>

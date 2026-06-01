@@ -2,7 +2,7 @@
 
 const Ready = () => {
     return (
-        <div className="max-w-full  bg-gradient-to-r from-[#4f39f6] to-[rgb(149,20,250)] text-white text-center py-20">
+        <div className="max-w-full  bg-gradient-to-r from-[#4f39f6] to-[rgb(149,20,250)] text-white text-center py-30  ">
             <div>
                 <h1 className="text-5xl p-2">Ready to Transform Your Workflow?</h1>
                 <p>Join thousands of professionals who are already using Digitools to work smarter.

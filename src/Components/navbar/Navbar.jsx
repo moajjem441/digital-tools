@@ -1,5 +1,5 @@
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
 
     return (
         <div className="navbar  shadow-sm max-w-full ">
@@ -33,7 +33,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-4 sm:flex flex-col md:flex-row">
-    <img src="../../../public/assets/products/shopping-cart.png" alt="Shopping Cart" className="h-6 w-6  text-white"></img>
+    <div className="relative">
+    <span className="badge bg-[#e65b5b] text-white absolute -top-4 -right-5">{cart}</span>
+      <img src="../../../public/assets/products/shopping-cart.png" alt="Shopping Cart" className="h-6 w-6  text-white"></img>
+    </div>
     <button className="btn btn-ghost">Login</button>
     <a className="btn bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-4xl">Get Started</a>
   </div>
