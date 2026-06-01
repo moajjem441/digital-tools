@@ -1,60 +1,55 @@
 
 const TransparentCard = () => {
     return (
-        <div className="flex flex-col sm:flex-row flex-wrap max-w-full sm:max-w-10/12 mx-auto gap-4">
+        
+        <div className="flex flex-col  max-w-full sm:max-w-10/12 mx-auto gap-4 text-center">
 
-            <div className="card w-91 md:w-96 bg-base-100 shadow-sm  border-1 border-gray-300">
+           
+             <h1 className="text-4xl font-bold ">Simple, Transparent Pricing</h1>
+            <p className="text-gray-500 px-6">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+           
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 mx-auto my-8">
+                <div className="card w-91 md:w-96 bg-base-100 shadow-sm  border-1 border-gray-300 text-left">
                 <div className="card-body">
-                    <span className="badge badge-xs badge-warning   p-2">Most Popular</span>
                     <div className="flex flex-col gap-7">
                         
                         <div>
-                         <h2 className="text-3xl font-bold">Pro</h2>
-                         <p>Best for professionals</p>
+                         <h2 className="text-3xl font-bold">Starter</h2>
+                         <p>Perfect for getting started</p>
                         </div>
-                        <span className="text-2xl"><span className="text-5xl font-bold">$29</span>/Month</span>
+                        <span className="text-2xl"><span className="text-5xl font-bold">$0</span>/Month</span>
                     </div>
                     <ul className="mt-6 flex flex-col gap-2 text-xs">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Access to all premium tools</span>
+                            <span>Access to 10 free tools</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Unlimited templates</span>
+                            <span>Basic templates</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Priority support</span>
+                            <span>Community support</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Unlimited projects</span>
+                            <span>1 project per month</span>
                         </li>
-
-
-                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Cloud sync</span>
-                        </li>
-
-
-                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Advanced analytics</span>
-                        </li>
-                       
                      
                     </ul>
+
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block">Start Pro Trial</button>
+                        <button className="btn btn-primary btn-block bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-full">Get Started Free</button>
                     </div>
+
                 </div>
             </div>
 
 
-           <div>
-             <div className="card w-91 md:w-96 bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white shadow-sm relative border-1 border-gray-300">
+          
+             <div className="card w-91 md:w-96 bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white shadow-sm relative border-1 border-gray-300 text-left">
                 <div className="card-body">
                     <span className="badge badge-xs badge-warning absolute -top-2 right-40 p-2">Most Popular</span>
                     <div className="flex flex-col gap-7">
@@ -102,58 +97,49 @@ const TransparentCard = () => {
                     </div>
                 </div>
             </div>
-           </div>
+          
 
 
 
-           <div className="card w-91 md:w-96 bg-base-100 shadow-sm  border-1 border-gray-300">
+            <div className="card w-91 md:w-96 bg-base-100 shadow-sm  border-1 border-gray-300 text-left">
                 <div className="card-body">
-                    <span className="badge badge-xs badge-warning   p-2">Most Popular</span>
                     <div className="flex flex-col gap-7">
                         
                         <div>
-                         <h2 className="text-3xl font-bold">Pro</h2>
-                         <p>Best for professionals</p>
+                         <h2 className="text-3xl font-bold">Starter</h2>
+                         <p>Perfect for getting started</p>
                         </div>
-                        <span className="text-2xl"><span className="text-5xl font-bold">$29</span>/Month</span>
+                        <span className="text-2xl"><span className="text-5xl font-bold">$0</span>/Month</span>
                     </div>
                     <ul className="mt-6 flex flex-col gap-2 text-xs">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Access to all premium tools</span>
+                            <span>Access to 10 free tools</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Unlimited templates</span>
+                            <span>Basic templates</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Priority support</span>
+                            <span>Community support</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Unlimited projects</span>
+                            <span>1 project per month</span>
                         </li>
-
-
-                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Cloud sync</span>
-                        </li>
-
-
-                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Advanced analytics</span>
-                        </li>
-                       
                      
                     </ul>
+
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block">Start Pro Trial</button>
+                        <button className="btn btn-primary btn-block bg-gradient-to-r from-[#4f39f6] to-[#9514fa] rounded-full">Get Started Free</button>
                     </div>
+
                 </div>
             </div>
+
+            </div>
+
         </div>
     );
 };
