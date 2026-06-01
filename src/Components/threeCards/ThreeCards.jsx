@@ -53,7 +53,7 @@ const ThreeCards = () => {
                     <figure className="px-10 pt-10">
                         <img
                             src="/assets/rocket.png"
-                            className=" rounded-full bg-[#e5d0f7] p-7" />
+                            className=" rounded-full bg-[#e5d0f7] p-4" />
                     </figure>
                     <div className="card-body items-center text-center">
                         <h2 className="card-title text-2xl">Start Creatingt</h2>
