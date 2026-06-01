@@ -5,6 +5,7 @@ import AllCards from './Components/all-cards/AllCards'
 import Banner from './Components/banner/Banner'
 import CardSeperator from './Components/card-separator/CardSeperator'
 import Navbar from './Components/navbar/Navbar'
+import ThreeCards from './Components/threeCards/ThreeCards'
 
 const productPromise= async()=>{
   const res = await fetch("/productData.json");
@@ -26,6 +27,8 @@ function App() {
      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
           <AllCards productData={productData}></AllCards>
      </Suspense>
+
+     <ThreeCards></ThreeCards>
      
     </div>
   )

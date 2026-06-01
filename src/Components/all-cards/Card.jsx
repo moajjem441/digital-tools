@@ -9,7 +9,7 @@ const Card = ({ product }) => {
   <div className="card-body">
     <div className="flex items-center justify-between gap-4">
       <img src={`/assets/products/${product.icon}`}></img>
-    <span className="badge badge-xs badge-warning">{product.tag}</span>
+    <span className={`badge badge-xs ${product.tag === "Best Seller" ? "text-[#bb4d00] bg-[#fef3c6]" : product.tag === "New" ? "text-[#0a883e] bg-[#dbfce7]" : "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent"} text-lg p-4 rounded-4xl`}>{product.tag}</span>
     </div>
     <div className="text-left">
       <h2 className="text-2xl font-bold">{product.name}</h2>
