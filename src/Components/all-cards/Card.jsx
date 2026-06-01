@@ -4,7 +4,7 @@ const Card = ({product}) => {
     return (
         <div>
 
-            <div className="card w-96 bg-base-100 shadow-sm">
+            <div className="card 90 sm:w-96 bg-base-100 shadow-sm">
   <div className="card-body">
     <span className="badge badge-xs badge-warning">Most Popular</span>
     <div className="flex justify-between">
