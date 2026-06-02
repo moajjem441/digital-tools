@@ -31,6 +31,7 @@ const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
     </div>
     <div className="text-left">
       <h2 className="text-2xl font-bold">{product.name}</h2>
+      <p className="text-gray-600">{product.description}</p>
       <span className="text-xl">${product.price.toFixed(2)}/{product.period}</span>
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
