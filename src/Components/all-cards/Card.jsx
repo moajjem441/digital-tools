@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const Card = ({ product ,cart,setCart}) => {
+const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
  const [buttonClick,setButtonClick]=useState(false)
 
  const handleButtonClick=()=>{
@@ -9,6 +9,7 @@ const Card = ({ product ,cart,setCart}) => {
     alert(`${product.name} added to cart!`);
     setCart(cart+1);
     setButtonClick(true);
+    setSelectedCart([...selectedCart,product])
 
   }else{
     alert(`${product.name} removed form cart!`);
@@ -20,7 +21,7 @@ const Card = ({ product ,cart,setCart}) => {
   
  }
 
-  console.log("product in card", product)
+  // console.log("product in card", product)
   return (
     <div>
 
