@@ -7,7 +7,7 @@ const AllCards = ({ productData, cart, setCart }) => {
 
     const [buttonType, setButtonType] = useState("product");
 
-    const[selectedCart,setSelectedCart]=useState([]);
+    const [selectedCart, setSelectedCart] = useState([]);
 
     // const [color,setColor]=useState("product")
 
@@ -39,15 +39,23 @@ const AllCards = ({ productData, cart, setCart }) => {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-content items-center gap-10  mx-auto">
+            <div >
                 {
 
-
-
                     buttonType === "product" ?
-                        data.map((product) => <Card key={product.id} product={product} cart={cart} setCart={setCart} selectedCart={selectedCart} setSelectedCart={setSelectedCart}></Card>)
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-content items-center gap-10  mx-auto">
+                            {
+
+                                data.map((product) => <Card key={product.id} product={product} cart={cart} setCart={setCart} selectedCart={selectedCart} setSelectedCart={setSelectedCart}></Card>)
+                            }
+
+
+                        </div>
                         :
                         <div>
+                            <p className="text-2xl font-bold text-left my-4">Your Cart</p>
+
                             {
                                 buttonType === "cart" && selectedCart.length === 0
                                     ? (
@@ -68,6 +76,10 @@ const AllCards = ({ productData, cart, setCart }) => {
                                         ))
                                     )
                             }
+
+                            <div>
+                                <p className="text-2xl font-bold my-4 text-left">Total: ${selectedCart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</p>
+                            </div>
                         </div>
 
                 }
