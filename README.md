@@ -6,7 +6,7 @@ This project is designed to practice frontend development while building real-wo
 ---
 
 ## 🔗 Live Demo
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://digital-tools-orcin.vercel.app)
+👉 [View Live Project](https://digital-tools-orcin.vercel.app)
 
 
 
