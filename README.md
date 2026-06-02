@@ -39,13 +39,20 @@ This project is designed to practice frontend development while building real-wo
 
 ## 📂 Project Structure
 src/
-├── components/
-│ ├── AllCards.jsx
-│ ├── Card.jsx
-│ └── Cart.jsx
-├── app/
-├── data/
-└── styles/
+├── all-cards/ # Product listing & main card logic
+├── banner/ # Hero banner section
+├── card/ # Individual product card component
+├── card-separator/ # UI separator for cards section
+├── cart/ # Cart page & cart UI
+├── footer/ # Footer section
+├── navbar/ # Navigation bar
+├── ready-part/ # Ready section / UI block
+├── threeCards/ # Three card showcase section
+├── transparent-card/ # Transparent style card component
+├── App.jsx # Main app component
+├── App.css # App styling
+├── index.css # Tailwind + DaisyUI config styles
+└── main.jsx # React entry point
 
 
 
