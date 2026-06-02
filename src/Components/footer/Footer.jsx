@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-gray-950 text-white p-10 py-40">
+            <footer className="footer sm:footer-horizontal bg-gray-950 text-white p-10 py-20">
   <aside>
     <h1 className="text-4xl font-bold">DigiTools</h1>
     <p>
@@ -41,7 +41,21 @@ const Footer = () => {
     </div>
     
   </nav>
+
+  
 </footer>
+
+<div className="bg-gray-950 text-gray-500 p-4 flex flex-col md:flex-row items-center justify-between border-t border-gray-800">
+  <p className="text-center md:text-left">
+    © 2024 DigiTools. All rights reserved.
+  </p>
+
+  <ul className="flex flex-col md:flex-row justify-center gap-2 md:gap-4 mt-2 md:mt-0 text-center">
+    <li>Privacy Policy</li>
+    <li>Terms of Service</li>
+    <li>Cookies</li>
+  </ul>
+</div>
         </div>
     );
 };
