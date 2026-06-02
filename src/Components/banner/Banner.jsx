@@ -7,7 +7,7 @@ const Banner = () => {
                 <div className=" flex flex-col items-center justify-center gap-5  w-full  shadow-sm">
 
                             <div className=" md:max-w-[90%] mx-auto mb-4 rounded-4xl bg-[#e1e7ff] text-[#e039f6] flex items-center gap-2 px-3 py-1 rounded-lg">
-                                <img className="" src="../../../public/assets/rectangle-3.png"></img>
+                                <img className="" src="/assets/rectangle-3.png"></img>
                                 <p> New: AI-Powered Tools Available</p>
                             </div>
                       
@@ -29,7 +29,7 @@ const Banner = () => {
             </div>
 
             <div className="col-span-12 md:col-span-6 ">
-                <img className="w-full h-full object-cover" src="../../../public/assets/banner.png" alt="banner"></img>
+                <img className="w-full h-full object-cover" src="/assets/banner.png" alt="banner"></img>
             </div>
         </div>
     );
