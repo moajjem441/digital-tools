@@ -1,6 +1,7 @@
 import { use, useState } from "react";
 import Card from "./Card";
 import Cart from "../cart/Cart";
+import toast from "react-hot-toast";
 
 
 const AllCards = ({ productData, cart, setCart }) => {
@@ -12,6 +13,11 @@ const AllCards = ({ productData, cart, setCart }) => {
     // const [color,setColor]=useState("product")
 
     // console.log("product data", productData)
+    const handleCheckOutButton=()=>{
+        setSelectedCart([]);
+        setCart(0);
+        toast.success("Checkout successfull!")
+    }
 
     const data = use(productData);
     // console.log("data", data);
@@ -79,6 +85,8 @@ const AllCards = ({ productData, cart, setCart }) => {
 
                             <div>
                                 <p className=" text-2xl font-bold my-4 text-left">Total: ${selectedCart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</p>
+                               
+                               <button onClick={handleCheckOutButton} className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white p-3 rounded-4xl w-full">Proceed to Checkout</button>
                             </div>
                         </div>
 

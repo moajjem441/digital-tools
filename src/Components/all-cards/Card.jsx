@@ -1,15 +1,18 @@
-import { useState } from "react";
+// import { useState } from "react";
 import toast from "react-hot-toast";
 
 
 const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
- const [buttonClick,setButtonClick]=useState(false)
+//  const [buttonClick,setButtonClick]=useState(false)
 
- const handleButtonClick=()=>{
-  if(!buttonClick){
+ const isAdded=selectedCart.some((item)=>item.id===product.id);
+
+ const handleButtonClick=(e)=>{
+  e.preventDefault();
+  if(!isAdded){
     toast.success(`${product.name} added to cart!`);
     setCart(cart+1);
-    setButtonClick(true);
+    // setButtonClick(true);
     setSelectedCart([...selectedCart,product])
 
   }
@@ -41,8 +44,9 @@ const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
       
     </ul>
     <div className="mt-6">
-      <button disabled={buttonClick}
-       onClick={handleButtonClick} className={` w-full p-3 rounded-4xl text-white ${buttonClick ? "bg-green-600 text-white": "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] "} `}>{buttonClick ? "Added to Cart" : "Buy Now"} </button>
+      <button disabled={isAdded}
+      type="button"
+       onClick={handleButtonClick} className={` w-full p-3 rounded-4xl text-white ${isAdded ? "bg-green-600 text-white": "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] "} `}>{isAdded ? "Added to Cart" : "Buy Now"} </button>
     </div>
   </div>
 </div>
