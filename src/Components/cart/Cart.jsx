@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 
 
 const Cart = ({product,cart,setCart,selectedCart,setSelectedCart}) => {
@@ -37,6 +38,7 @@ const Cart = ({product,cart,setCart,selectedCart,setSelectedCart}) => {
                 
                 const updatedCart=selectedCart.filter((item)=>item.id !== product.id);
                 setSelectedCart(updatedCart);
+                toast.success(`${cartItem.name} removed from cart!`);
             }} className="bg-white text-red-500 px-4 py-2 rounded">Remove  </button>
         </div>
 

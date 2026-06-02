@@ -53,14 +53,14 @@ const AllCards = ({ productData, cart, setCart }) => {
 
                         </div>
                         :
-                        <div>
+                        <div className="border-1 border-gray-200 rounded p-4">
                             <p className="text-2xl font-bold text-left my-4">Your Cart</p>
 
                             {
                                 buttonType === "cart" && selectedCart.length === 0
                                     ? (
                                         <h2 className="text-2xl font-bold">
-                                            Your Cart is Empty
+                                           Empty
                                         </h2>
                                     )
                                     : (
@@ -78,7 +78,7 @@ const AllCards = ({ productData, cart, setCart }) => {
                             }
 
                             <div>
-                                <p className="text-2xl font-bold my-4 text-left">Total: ${selectedCart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</p>
+                                <p className=" text-2xl font-bold my-4 text-left">Total: ${selectedCart.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</p>
                             </div>
                         </div>
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 
 const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
@@ -6,17 +7,11 @@ const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
 
  const handleButtonClick=()=>{
   if(!buttonClick){
-    alert(`${product.name} added to cart!`);
+    toast.success(`${product.name} added to cart!`);
     setCart(cart+1);
     setButtonClick(true);
     setSelectedCart([...selectedCart,product])
 
-  }else{
-    alert(`${product.name} removed form cart!`);
-   if(cart > 0){
-    setCart(cart-1);
-    setButtonClick(false);
-   }
   }
   
  }
@@ -46,7 +41,8 @@ const Card = ({ product ,cart,setCart,selectedCart,setSelectedCart}) => {
       
     </ul>
     <div className="mt-6">
-      <button onClick={handleButtonClick} className={` w-full p-3 rounded-4xl text-white ${buttonClick ? "bg-green-600 text-white": "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] "} `}>{buttonClick ? "Added to Cart" : "Buy Now"}</button>
+      <button disabled={buttonClick}
+       onClick={handleButtonClick} className={` w-full p-3 rounded-4xl text-white ${buttonClick ? "bg-green-600 text-white": "bg-gradient-to-r from-[#4f39f6] to-[#9514fa] "} `}>{buttonClick ? "Added to Cart" : "Buy Now"} </button>
     </div>
   </div>
 </div>

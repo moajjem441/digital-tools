@@ -10,6 +10,8 @@ import TransparentCard from './Components/transparent-card/TransparentCard'
 import Ready from './Components/ready-part/Ready'
 import Footer from './Components/footer/Footer'
 
+import  { Toaster } from 'react-hot-toast';
+
 const productPromise= async()=>{
   const res = await fetch("/productData.json");
 
@@ -37,7 +39,7 @@ function App() {
      <TransparentCard></TransparentCard>
      <Ready></Ready>
      <Footer></Footer>
-     
+     <Toaster />
     </div>
   )
 }
