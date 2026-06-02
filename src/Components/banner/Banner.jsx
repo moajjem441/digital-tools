@@ -22,7 +22,7 @@ const Banner = () => {
                             Explore </p>
                         <div className="flex items-center gap-4 justify-center text-center my-6">
                             <div className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white px-4 py-2 rounded-4xl">Explore Products</div>
-                            <div className="flex border-2 rounded-2xl p-2 gap-2"> <img src="../../../public/assets/Play.png"></img> <button>Watch Demo</button></div>
+                            <div className="flex border-2 rounded-2xl p-2 gap-2"> <img src="/assets/Play.png"></img> <button>Watch Demo</button></div>
                         </div>
                     
                 </div>
